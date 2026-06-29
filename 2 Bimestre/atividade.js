@@ -3,7 +3,6 @@ let alunos = [];
 let nomesOrig = [];
 let nomesAtual = [];
 
-// ── 1 & 3
 function adicionarAluno() {
   const nome = document.getElementById('nome').value.trim();
   const idade = parseInt(document.getElementById('idade').value);
@@ -53,7 +52,7 @@ function renderTabela() {
     `).join('');
 }
 
-// ── 7: CALCULADORA ───────────────────────
+// CALCULADORA 
 function calcular() {
   const a = parseFloat(document.getElementById('calc-a').value);
   const b = parseFloat(document.getElementById('calc-b').value);
@@ -70,7 +69,7 @@ function calcular() {
     typeof resultado === 'number' ? '= ' + +resultado.toFixed(4) : resultado;
 }
 
-// ── 8: NOTAS ─────────────────────────────
+// NOTAS
 function verificarNota() {
   const nome = document.getElementById('nota-nome').value.trim();
   const n1 = parseFloat(document.getElementById('nota-n1').value);
@@ -85,7 +84,6 @@ function verificarNota() {
     `${nome} — Média: ${media} → ${sit}`;
 }
 
-// ── 9: ORDENAR ───────────────────────────
 function addNome() {
   const inp = document.getElementById('ord-nome');
   const v = inp.value.trim();
@@ -110,7 +108,6 @@ function renderNomes() {
       : nomesAtual.map(n => `<span>${n}</span>`).join('');
 }
 
-// ── 10: CLIQUE ───────────────────────────
 function renderCards() {
   const el = document.getElementById('cards-clique');
   if (alunos.length === 0) { el.innerHTML = '<em>Nenhum aluno cadastrado ainda.</em>'; return; }
