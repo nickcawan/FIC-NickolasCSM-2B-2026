@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Atividades JS</title>
+  <link rel="stylesheet" href="atividade.css" />
+  <script src="atividade.js" defer></script>
+</head>
+
+<body>
+
+  <h1>Atividade do 2º Bimestre</h1>
+
+  <!-- ===== 1 & 3: COLETA E APRESENTAÇÃO ===== -->
+  <h2>1 e 3 · Coleta e Apresentação de Dados</h2>
+
+  <label>Nome: <input type="text" id="nome" /></label>
+  <label>Idade: <input type="number" id="idade" /></label><br>
+  <label>Nota 1: <input type="number" id="n1" min="0" max="10" step="0.1" /></label>
+  <label>Nota 2: <input type="number" id="n2" min="0" max="10" step="0.1" /></label>
+  <label>Nota 3: <input type="number" id="n3" min="0" max="10" step="0.1" /></label><br>
+  <button onclick="adicionarAluno()">Adicionar</button>
+  <button onclick="limparAlunos()">Limpar</button>
+
+  <table id="tabela" style="display:none">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Média</th>
+        <th>Status</th>
+        <th>Maioridade</th>
+      </tr>
+    </thead>
+    <tbody id="corpo-tabela"></tbody>
+  </table>
+
+  <!-- ===== 7: CALCULADORA ===== -->
+  <h2>7 · Mini Calculadora</h2>
+
+  <input type="number" id="calc-a" placeholder="Número 1" style="width:120px" />
+  <select id="calc-op">
+    <option>+</option>
+    <option>-</option>
+    <option>*</option>
+    <option>/</option>
+  </select>
+  <input type="number" id="calc-b" placeholder="Número 2" style="width:120px" />
+  <button onclick="calcular()">=</button>
+  <span id="calc-resultado" style="font-weight:bold; font-size:1.1rem;"></span>
+
+  <!-- ===== 8: SISTEMA DE NOTAS ===== -->
+  <h2>8 · Sistema de Notas</h2>
+
+  <label>Nome: <input type="text" id="nota-nome" /></label><br>
+  <label>Nota 1: <input type="number" id="nota-n1" min="0" max="10" step="0.1" /></label>
+  <label>Nota 2: <input type="number" id="nota-n2" min="0" max="10" step="0.1" /></label>
+  <label>Nota 3: <input type="number" id="nota-n3" min="0" max="10" step="0.1" /></label><br>
+  <button onclick="verificarNota()">Verificar</button>
+  <div id="resultado-notas"></div>
+
+  <!-- ===== 9: ORDENAR NOMES ===== -->
+  <h2>9 · Ordenar Nomes</h2>
+
+  <input type="text" id="ord-nome" placeholder="Digite um nome" onkeydown="if(event.key==='Enter')addNome()" />
+  <button onclick="addNome()">Adicionar</button>
+  <button onclick="ordenar('az')">A → Z</button>
+  <button onclick="ordenar('za')">Z → A</button>
+  <button onclick="ordenar('orig')">Original</button>
+  <div class="nomes" id="lista-nomes"></div>
+
+  
+  <h2>10 · Apresentar Dados por Clique</h2>
+  <p>Adicione alunos na seção 1 e clique em um nome para ver os detalhes.</p>
+  <div id="cards-clique"></div>
+
+
+
+</body>
+
+</html>
