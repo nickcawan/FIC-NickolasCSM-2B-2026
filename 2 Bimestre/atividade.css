@@ -1,0 +1,64 @@
+   body {
+       font-family: Arial, sans-serif;
+       max-width: 700px;
+       margin: 30px auto;
+       padding: 0 16px;
+   }
+
+   h1 {
+       text-align: center;
+   }
+
+   h2 {
+       border-bottom: 2px solid #333;
+       padding-bottom: 6px;
+       margin-top: 40px;
+   }
+
+
+   input {
+       padding: 6px;
+       margin: 4px;
+       width: 180px;
+   }
+
+   button {
+       padding: 7px 14px;
+       margin: 4px;
+       cursor: pointer;
+   }
+
+   table {
+       border-collapse: collapse;
+       width: 100%;
+       margin-top: 10px;
+   }
+
+   th,
+   td {
+       border: 1px solid #ccc;
+       padding: 8px;
+       text-align: left;
+   }
+
+   th {
+       background: #f0f0f0;
+   }
+
+   #resultado-notas {
+       margin-top: 10px;
+       font-size: 1.1rem;
+       font-weight: bold;
+   }
+
+   .nomes {
+       margin-top: 10px;
+   }
+
+   .nomes span {
+       display: inline-block;
+       background: #e0e0e0;
+       border-radius: 4px;
+       padding: 4px 10px;
+       margin: 3px;
+   }
