@@ -1,16 +1,4 @@
-
-
-
-
-
-
-
-
-
-
-
-
-   * {
+* {
     box-sizing: border-box;
 }
 
@@ -22,21 +10,16 @@ body {
     color: #222;
 }
 
-
-/* Caixa principal */
 body {
     min-height: 100vh;
 }
 
-
-/* títulos */
 h1 {
     text-align: center;
     color: white;
     font-size: 2.5rem;
     margin-bottom: 35px;
 }
-
 
 h2 {
     background: white;
@@ -47,9 +30,6 @@ h2 {
     box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 
-
-/* ===== CAMPOS ===== */
-
 label {
     display: inline-block;
     background: rgba(255,255,255,.9);
@@ -57,7 +37,6 @@ label {
     margin: 5px;
     border-radius: 10px;
 }
-
 
 input, select {
     padding: 10px;
@@ -67,15 +46,11 @@ input, select {
     transition: .3s;
 }
 
-
 input:focus,
 select:focus {
     border-color: #2a5298;
     box-shadow: 0 0 8px #2a5298;
 }
-
-
-/* ===== BOTÕES ===== */
 
 button {
     background: #1e3c72;
@@ -89,14 +64,10 @@ button {
     transition: .3s;
 }
 
-
 button:hover {
     background: #ff9800;
     transform: translateY(-2px);
 }
-
-
-/* ===== TABELA ===== */
 
 table {
     width: 100%;
@@ -107,13 +78,11 @@ table {
     overflow: hidden;
 }
 
-
 th {
     background: #1e3c72;
     color: white;
     padding: 12px;
 }
-
 
 td {
     padding: 12px;
@@ -121,13 +90,9 @@ td {
     border-bottom: 1px solid #ddd;
 }
 
-
 tr:hover {
     background: #eef4ff;
 }
-
-
-/* ===== RESULTADOS ===== */
 
 #resultado-notas,
 #calc-resultado {
@@ -139,16 +104,12 @@ tr:hover {
     color: #1e3c72;
 }
 
-
-/* ===== LISTA DE NOMES ===== */
-
 .nomes {
     background: white;
     padding: 15px;
     border-radius: 12px;
     margin-top: 15px;
 }
-
 
 .nomes span {
     display: inline-block;
@@ -159,24 +120,17 @@ tr:hover {
     border-radius: 20px;
 }
 
-
-/* ===== CARDS DE CLIQUE ===== */
-
 #cards-clique {
     background: white;
     padding: 20px;
     border-radius: 15px;
 }
 
-
 #cards-clique p {
     background: #f2f6ff;
     padding: 10px;
     border-radius: 10px;
 }
-
-
-/* responsivo */
 
 @media(max-width:700px){
 
